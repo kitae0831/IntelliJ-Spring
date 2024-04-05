@@ -72,3 +72,4 @@ public class RequestController {
         return String.format("Hello, @RequestBody.<br> (name = %s, age = %d) ", star.name, star.age);
     }
 }
+// test
