@@ -1,6 +1,7 @@
 plugins {
     id 'java'
-    id 'org.springframework.boot' version '3.2.4'
+    id 'org.springframework.boot' version '3.1.10'
+>>>>>>> 4c04f14 (init commit)
     id 'io.spring.dependency-management' version '1.1.4'
 }
 
@@ -22,13 +23,23 @@ repositories {
 }
 
 dependencies {
+<<<<<<< HEAD
     implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+=======
+>>>>>>> 4c04f14 (init commit)
     implementation 'org.springframework.boot:spring-boot-starter-web'
     compileOnly 'org.projectlombok:lombok'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
 }
 
+<<<<<<< HEAD
+=======
+tasks.named('bootBuildImage') {
+    builder = 'paketobuildpacks/builder-jammy-base:latest'
+}
+
+>>>>>>> 4c04f14 (init commit)
 tasks.named('test') {
     useJUnitPlatform()
 }
